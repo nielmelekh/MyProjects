@@ -1,1 +1,35 @@
 Hello Niel
+
+ILMAC023:MyProjects gm5806$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   myFirstFile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ILMAC023:MyProjects gm5806$ git diff
+diff --git a/myFirstFile.txt b/myFirstFile.txt
+index 0db355f..fb35a5b 100644
+--- a/myFirstFile.txt
++++ b/myFirstFile.txt
+@@ -1 +1,2 @@
+ Hello Niel
++This is my first github try
+ILMAC023:MyProjects gm5806$ git add myFirstFile.txt
+ILMAC023:MyProjects gm5806$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   myFirstFile.txt
+
+ILMAC023:MyProjects gm5806$ git commit -m "my first try"
+[master d73cb40] my first try
+ 1 file changed, 1 insertion(+)
+ILMAC023:MyProjects gm5806$ git push origin master
